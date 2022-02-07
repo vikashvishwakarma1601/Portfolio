@@ -16,6 +16,11 @@
       <div class="header">
         <h1><a href="#main"> Vikash </a></h1>
       </div>
+      <div class="hamburger_menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="menu">
         <ul class="items">
           <li>
@@ -46,8 +51,8 @@
       </div>
     </nav>
 
-    <div id="main">
-      <div class="row">
+    <main id="main">
+      <div class="row profile_desc">
         <div class="container-bg"></div>
         <div class="content">
           <h3 class="intro uppercase">
@@ -84,33 +89,18 @@
         <div class="content">
           <div class="container">
             <div class="card-wrapper">
-              <div class="card" data-image="css" title="CSS">
-                <img src="./public/images/css3.svg" class="card-back" />
-                <img src="./public/images/front.svg" class="card-front" />
-              </div>
-
-              <div class="card" data-image="expressjs" title="Express Js">
-                <img src="./public/images/expressjs.svg" class="card-back" />
-                <img src="./public/images/front.svg" class="card-front" />
-              </div>
-
               <div class="card" data-image="html-5" title="HTML 5">
                 <img src="./public/images/html-5.svg" class="card-back" />
                 <img src="./public/images/front.svg" class="card-front" />
               </div>
 
+              <div class="card" data-image="css" title="CSS">
+                <img src="./public/images/css3.svg" class="card-back" />
+                <img src="./public/images/front.svg" class="card-front" />
+              </div>
+
               <div class="card" data-image="javascript" title="Javascript">
                 <img src="./public/images/javascript.svg" class="card-back" />
-                <img src="./public/images/front.svg" class="card-front" />
-              </div>
-
-              <div class="card" data-image="node-js" title="Node Js">
-                <img src="./public/images/node-js.svg" class="card-back" />
-                <img src="./public/images/front.svg" class="card-front" />
-              </div>
-
-              <div class="card" data-image="mongodb" title="MongoDB">
-                <img src="./public/images/mongodb.svg" class="card-back" />
                 <img src="./public/images/front.svg" class="card-front" />
               </div>
 
@@ -123,73 +113,90 @@
                 <img src="./public/images/redux.svg" class="card-back" />
                 <img src="./public/images/front.svg" class="card-front" />
               </div>
+
+              <div class="card" data-image="node-js" title="Node Js">
+                <img src="./public/images/node-js.svg" class="card-back" />
+                <img src="./public/images/front.svg" class="card-front" />
+              </div>
+
+              <div class="card" data-image="expressjs" title="Express Js">
+                <img src="./public/images/expressjs.svg" class="card-back" />
+                <img src="./public/images/front.svg" class="card-front" />
+              </div>
+
+              <div class="card" data-image="mongodb" title="MongoDB">
+                <img src="./public/images/mongodb.svg" class="card-back" />
+                <img src="./public/images/front.svg" class="card-front" />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="row project_container" id="projects">
-        <div class="project_heading">
-          <h3>Projects</h3>
-          <p class="info">Check out my projects &#128071;</p>
-        </div>
-        <div class="project_wrapper">
-          <div class="project">
-            <div class="project_content">
-              <h4 class="project_title">
-                <a
-                  href="http://bus-reservation-webapp.herokuapp.com/"
-                  target="_blank"
-                >
-                  Bus Booking System
-                  <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-              </h4>
-              <div class="project_desc">
-                <p class="paragraph">
-                  Developed a website, where one can search available bus and
-                  book there seats according to availablity and can generate the
-                  ticket.Have functionality like searching bus, view seats, book
-                  seat, payment, ticket generation and removation.
-                </p>
-                <p class="paragraph">
-                  Bus Booking System is designed using React, Node, Express, and
-                  MongoDB.
-                </p>
+        <div class="inner_section">
+          <div class="project_heading">
+            <h3>Projects</h3>
+            <p class="info">Check out my projects &#128071;</p>
+          </div>
+          <div class="project_wrapper">
+            <div class="project">
+              <div class="project_content">
+                <h4 class="project_title">
+                  <a
+                    href="http://bus-reservation-webapp.herokuapp.com/"
+                    target="_blank"
+                  >
+                    Bus Booking System
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </h4>
+                <div class="project_desc">
+                  <p class="paragraph">
+                    Developed a website, where one can search available bus and
+                    book there seats according to availablity and can generate
+                    the ticket.Have functionality like searching bus, view
+                    seats, book seat, payment, ticket generation and removation.
+                  </p>
+                  <p class="paragraph">
+                    Bus Booking System is designed using React, Node, Express,
+                    and MongoDB.
+                  </p>
+                </div>
+              </div>
+              <div class="project_image">
+                <img src="./public/images/bus.JPG" alt="bus_project_image" />
               </div>
             </div>
-            <div class="project_image">
-              <img src="./public/images/bus.JPG" alt="bus_project_image" />
-            </div>
-          </div>
-          <div class="project">
-            <div class="project_image">
-              <img
-                src="./public/images/crypto.JPG"
-                alt="cryptography_project_image"
-              />
-            </div>
-            <div class="project_content">
-              <h4 class="project_title">
-                <a
-                  href="https://cryptography-webapp.herokuapp.com/"
-                  target="_blank"
-                >
-                  Cryptography App
-                  <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-              </h4>
-              <div class="project_desc">
-                <p class="paragraph">
-                  Developed a website, where one can search available bus and
-                  book there seats according to availablity and can generate the
-                  ticket.Have functionality like searching bus, view seats, book
-                  seat, payment, ticket generation and removation.
-                </p>
-                <p class="paragraph">
-                  Bus Booking System is designed using React, Node, Express, and
-                  MongoDB.
-                </p>
+            <div class="project">
+              <div class="project_image">
+                <img
+                  src="./public/images/crypto.JPG"
+                  alt="cryptography_project_image"
+                />
+              </div>
+              <div class="project_content">
+                <h4 class="project_title">
+                  <a
+                    href="https://cryptography-webapp.herokuapp.com/"
+                    target="_blank"
+                  >
+                    Cryptography App
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </h4>
+                <div class="project_desc">
+                  <p class="paragraph">
+                    Developed a website, where one can search available bus and
+                    book there seats according to availablity and can generate
+                    the ticket.Have functionality like searching bus, view
+                    seats, book seat, payment, ticket generation and removation.
+                  </p>
+                  <p class="paragraph">
+                    Bus Booking System is designed using React, Node, Express,
+                    and MongoDB.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -197,6 +204,7 @@
       </div>
 
       <div id="about">
+        <div class="about_bg"></div>
         <div class="inner_section">
           <h3>About me</h3>
           <div class="desc">
@@ -231,6 +239,7 @@
         </div>
       </div>
       <div id="contact">
+        <div class="contact_bg"></div>
         <div class="inner_section">
           <h3>Contact</h3>
           <div class="conatct_info">
@@ -249,7 +258,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <aside class="social_media">
       <div class="icon_wrapper">

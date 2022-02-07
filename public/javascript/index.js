@@ -2,14 +2,19 @@ const bg1 = document.querySelector(".container-bg");
 const col_box = document.querySelector(".skills-bg");
 
 const windowWidth = bg1.style.width;
+const windowDimension = window.innerWidth;
 window.addEventListener("scroll", (event) => {
   const scrollY = window.scrollY;
   if (scrollY > 10 && scrollY < 450) {
     if (scrollY <= 440) {
       col_box.style.transform = `rotate(${20 - (scrollY / 100) * 4.6}deg)`;
     }
+    if (windowDimension < 600) {
+      col_box.style.top = `${5 - scrollY / 100}%`;
+    } else {
+      col_box.style.top = `${35 - scrollY / 100}%`;
+    }
 
-    col_box.style.top = `${35 - scrollY / 100}%`;
     bg1.style.width = `${50 + (scrollY / 8) * 0.9}%`;
   }
   if (scrollY > 440) {
@@ -41,3 +46,18 @@ setInterval(() => {
   }
   index = index < text.length ? index + 1 : 0;
 }, 500);
+
+const burgerMenu = document.querySelector(".hamburger_menu");
+const menu = document.querySelector(".menu");
+let isActive = false;
+burgerMenu.addEventListener("click", (event) => {
+  if (isActive) {
+    burgerMenu.classList.remove("active");
+    menu.style.transform = 'translateY(-500px)';
+    isActive = false;
+  } else {
+    burgerMenu.classList.add("active");
+    menu.style.transform = 'translateY(0px)';
+    isActive = true;
+  }
+});
