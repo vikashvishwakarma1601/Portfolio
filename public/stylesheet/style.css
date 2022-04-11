@@ -50,7 +50,8 @@ nav {
   z-index: 10;
   background-color: #ffe4c4;
   background-image: url(../images/film_grain.png);
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
 .header {
@@ -482,6 +483,36 @@ nav ul.items li span:last-child {
   vertical-align: middle;
 }
 
+.side_project {
+  background-color: #5f9ea0d4;
+}
+
+.project_links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.project_links .link {
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  color: #fdfdfd;
+  background-image: url(../images/film_grain.png);
+  background-color: #7b68ee;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project_links .link:hover {
+  box-shadow: none;
+  background-color: #7b68eed4;
+}
+
 #about {
   position: relative;
   height: 400px;
@@ -724,19 +755,6 @@ nav ul.items li span:last-child {
   left: -20px;
 }
 
-/* 
-.work_exp .exp_detail span {
-  font-weight: 400;
-} */
-/* 
-font-family: "Playfair Display", serif;
-font-family: "VT323", monospace;
-font-family: "Nunito", sans-serif;
-font-family: "Montserrat", monospace; */
-
-.exp_box .company_title {
-}
-
 footer {
   width: 100%;
   height: 50px;
@@ -914,7 +932,7 @@ footer .text_container {
   .icon {
     transform: translate(-105px);
   }
-  .work_exp{
+  .work_exp {
     min-height: 90vh;
     margin-top: 0;
   }
