@@ -886,6 +886,15 @@ footer .text_container {
     width: 100%;
   }
 
+  .project_links{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project_links .link{
+    width: 100%;
+  }
+
   #about {
     height: 500px;
   }
