@@ -3,6 +3,8 @@ const col_box = document.querySelector(".skills-bg");
 const certification = document.querySelector("#certification");
 const about = document.querySelector(".about_bg");
 const windowWidth = window.innerWidth;
+
+
 window.addEventListener("scroll", (event) => {
   const scrollY = window.scrollY;
   if (scrollY > 10 && scrollY < 450) {
@@ -58,6 +60,7 @@ setInterval(() => {
   index = index < text.length ? index + 1 : 0;
 }, 500);
 
+
 const burgerMenu = document.querySelector(".hamburger_menu");
 const menu = document.querySelector(".menu");
 let isActive = false;
@@ -73,9 +76,15 @@ burgerMenu.addEventListener("click", (event) => {
   }
 });
 
+menu.addEventListener('click',()=>{
+  if(isActive){
+    menu.style.transform = "translateY(-150%)";
+    burgerMenu.classList.remove("active");
+  }
+})
+
 const hyperLink = Array.from(document.getElementsByTagName("a"));
 const audio = document.querySelector("#audio");
-console.log(audio);
 hyperLink.forEach((link) => {
   link.addEventListener("click", () => {
     audio.play();
